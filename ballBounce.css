@@ -16,12 +16,6 @@
     overflow-x: hidden;
 }
 
-.ball:hover {
-    background-color: blue;
-    /* height: 40px;
-    width: 80px; */
-}
-
 @keyframes  bounce {
     0% {
         transform: translate(0,0);
