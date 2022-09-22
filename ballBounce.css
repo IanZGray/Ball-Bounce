@@ -1,0 +1,86 @@
+.ball {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(14, 14, 14);
+    background-color: rgb(242, 242, 242);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    animation: bounce 1s infinite;
+}
+
+.ball:hover {
+    background-color: blue;
+    /* height: 40px;
+    width: 80px; */
+}
+
+@keyframes  bounce {
+    0% {
+        transform: translate(0,0);
+    }
+    8.33% {
+        /* width: 50px;
+        height: 50px; */
+    }
+    16.66% {
+        /* width: 40px; */
+        height: 65px;
+        transform: translate(0,70px);
+    }
+    24.99% {
+        width: 40px;
+        height: 80px;
+        transform: translate(0,92px);
+    }
+    33.33% {
+        transform: translate(0, 152px);
+        width: 100px;
+        height: 20px;
+    }
+    41.66% {
+        transform: translate(0, 142.5px)
+;        width: 70px;
+        height: 30px;
+    }
+    49.99% {
+        transform: translate(0,50px);
+        width: 40px;
+        height: 70px;
+    }
+    58.33% {
+
+    }
+    66.66% {
+
+    }
+    75% {
+
+    }
+    83.33% {
+
+    }
+    91.66% {
+
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.floor {
+    background-color: grey;
+    position:absolute;
+    width: 100%;
+    height: 75vh;
+    transform: translate(0,180px);
+}
+body {
+    background-color: rgb(255, 248, 239);
+}
